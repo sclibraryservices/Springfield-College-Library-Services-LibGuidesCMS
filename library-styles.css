@@ -4,11 +4,12 @@
 .list-group {margin-bottom:0px;}
 .well {padding: 10px; background-color: rgba(245,245,245,0.4); margin-top: 10px;}
 #search-background { 
-      ##background-image: url(https://libapps.s3.amazonaws.com/accounts/54374/images/spines2.jpg);
-      background-repeat: no-repeat;
+      /* commenting out until image taken
+	background-image: url(https://libapps.s3.amazonaws.com/accounts/54374/images/spines2.jpg);
+      	background-repeat: no-repeat; */
       margin: 0px 0px;
       padding: 2% 2%;
-      color: #ff;
+      color: #fff;
 }
 
 .ui-widget-header {
@@ -30,17 +31,17 @@ s-lg-admin-command-bar {font-size: 12px;}
 body {
 	padding: 0px 0px;
 	font-family: 'Roboto Condensed', sans-serif;
-  	color: #222222;
+  	color: #000;
   	font-size: 15px;
-  	background-color: #E9EAED;
-        ##background-image: url("https://libapps.s3.amazonaws.com/accounts/54374/images/weber_Pano.jpg");
-        background-attachment: fixed;
-        background-position: center center;
+  	background-color: #fff;
+        /*commented out background img until image taken 
+	background-image: url("https://libapps.s3.amazonaws.com/accounts/54374/images/weber_Pano.jpg");
+	background-attachment: fixed;
+        background-position: center center; */
   	}
 /*adds padding to content area*/
 .s-lib-side-borders {
 	padding: 0px 20px;
-
 	}
 
 /*tucks skiplink out of view*/
@@ -54,21 +55,21 @@ body {
         padding-left: 5px;
 	font-size: 20px;
   	font-family: 'Roboto Condensed', sans-serif;
-  	color: #FFFFFF;
+  	color: #fff;
 	} 
 
 /*modifies library name on mobile view*/
 #header-nav .navbar-default .navbar-brand {
-  font-family: 'Amatica SC', cursive;
+  font-family: 'Roboto Slab', serif;
   font-weight: 800;
   font-size: 3em;
-  color: #222222;
-  margin-bottom: 32px
+  color: #3D3935;
+  margin-bottom: 32px;
 }
 
 /*styles branding area - background color behind logo or banner*/
 #branding-area {
-	background-color: #000000;
+	background-color: #3D3935;
         padding: 8px;
 }
 /*styles links in branding area - not needed for banner image*/
@@ -81,37 +82,37 @@ body {
 
 /*styles navbar background color, squares edges, sets font*/
 #header-nav .navbar-default {
-  background-color: #105d55;
-	border-color: #000000;
+  	background-color: #3D3935;
+	border-color: #3D3935;
 	border-radius: 0px;
   	font-family: 'Roboto Condensed', sans-serif;
 }
 /*changes color for navbar links*/
 #header-nav .navbar-default .navbar-nav>li>a {
-  color: #FFFFFF;
- padding-top: 40px;
-padding-bottom:40px;
+	color: #FFFFFF;
+	padding-top: 40px;
+	padding-bottom:40px;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+	display: block;
 }
     
 /*changes background color for open, hover and focused navbar links*/
 #header-nav .navbar-default .navbar-nav>.open>a,#header-nav .navbar-default .navbar-nav>.open>a:focus,#header-nav .navbar-default .navbar-nav>.open>a:hover {
-        background-color: #105D55;
+        background-color: #3D3935;
       }
 
 /*styles box titles*/
 .s-lib-box .s-lib-box-title {
-	background-color: #105d55;
+	background-color: #D7D2CB;
 	font-size: 16px;
 	font-weight: 600;
 	color: #FFFFFF;
 	}
 /*styles tabs on search box*/
 .ui-tabs-anchor {
-background-color: #105d55;
+background-color: #862633;
 color: #FFFFFF;
 font-size: 16px;
 font-weight: 600;
@@ -119,15 +120,15 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 /*Changes font color on search box tabs*/
 #ui-id-1 {
-color: #FFFFFF
+color: #FFFFFF;
 }
 /*Changes font color on search box tabs*/
 #ui-id-2 {
-color: #FFFFFF
+color: #FFFFFF;
 }
 /*Changes font color on search box tabs*/
 #ui-id-3 {
-color: #FFFFFF
+color: #FFFFFF;
 }
 
 /*Footer styles*/
@@ -168,14 +169,14 @@ color: #FFFFFF
 }
 
 #custom-footer a {
-    color: #d2d1d1;
+    color: #fff;
     text-decoration: none;
 }
 
 #custom-footer a:hover,
 #custom-footer a:focus {
-    text-decoration: none;
-    color: white;
+    text-decoration: underline;
+    color: #fff;
 }
 
 #custom-footer .social-networks {
@@ -186,7 +187,7 @@ color: #FFFFFF
 
 #custom-footer .social-networks a {
     font-size: 32px;
-    color: #f9f9f9;
+    color: #e9df97;
     padding: 10px;
     transition: 0.2s;
 }
@@ -203,12 +204,12 @@ color: #FFFFFF
     color: #ef1a1a;
 }
 
-#custom-footer .twitter:hover {
-    color: #00aced;
+#custom-footer .instagram:hover {
+    color: #A719EF;
 }
 
 #custom-footer .btn {
-    color: 105d55;
+    color: #e9df97;
     background-color: #d2ef8f;
     border-radius: 20px;
     border: none;
