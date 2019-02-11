@@ -1,5 +1,5 @@
-<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto+Condensed" rel="stylesheet">
-<style>
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Slab');
 
 .list-group {margin-bottom:0px;}
 .well {padding: 10px; background-color: rgba(245,245,245,0.4); margin-top: 10px;}
@@ -17,7 +17,7 @@ background: #fff;
 }
 
 #search-info{
-background-color: rgba(0,0,0,0.6); padding-left 0px;}
+background-color: rgba(0,0,0,0.6); padding-left: 0px;}
 
 #s-lg-guide-tabs-title-bar {
     border: none;
@@ -34,9 +34,9 @@ body {
   	color: #000;
   	font-size: 15px;
   	background-color: #fff;
-        /*commented out background img until image taken 
-	background-image: url("https://libapps.s3.amazonaws.com/accounts/54374/images/weber_Pano.jpg");
-	background-attachment: fixed;
+        /*commented out background img until new image taken 
+		background-image: url("https://libapps.s3.amazonaws.com/accounts/54374/images/weber_Pano.jpg");
+		background-attachment: fixed;
         background-position: center center; */
   	}
 /*adds padding to content area*/
@@ -258,5 +258,5 @@ font-size: 15px;
 #header-nav .navbar-default .navbar-nav>li>a {
   font-size: 16px;}
 }
+/* CSS Document */
 
-</style>
