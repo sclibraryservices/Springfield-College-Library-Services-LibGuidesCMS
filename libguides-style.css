@@ -1,0 +1,748 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab');
+
+.list-group {
+	margin-bottom:0px;
+}
+.well {
+	padding: 10px;
+	background-color: rgba(245,245,245,0.4);
+	margin-top: 10px;
+}
+#search-background { 
+      /* commenting out until image taken
+		background-image: url(https://libapps.s3.amazonaws.com/accounts/54374/images/spines2.jpg);
+      	background-repeat: no-repeat; */
+      margin: 0px 0px;
+      padding: 2% 2%;
+      color: #fff;
+}
+
+.ui-widget-header {
+background: #fff;
+}
+
+#search-info{
+background-color: rgba(0,0,0,0.6);
+	padding-left: 0px;
+}
+
+#s-lg-guide-tabs-title-bar {
+    border: none;
+}
+
+#s-lib-bc {
+	color: #000;
+}
+
+ol.breadcrumb a {
+	color: #862633;
+}
+
+#s-lib-bc-page {
+	color: #707070;
+}
+/*changes font size for command bar on admin side*/
+s-lg-admin-command-bar {
+	font-size: 12px;
+}
+
+/*removes padding from body, sets body font*/
+body {
+	padding: 0px 0px;
+	font-family: 'Open Sans', sans-serif;
+  	color: #000;
+  	font-size: 15px;
+  	background-color: #fff;
+        /*commented out background img until new image taken 
+		background-image: url("");
+		background-attachment: fixed;
+        background-position: center center; */
+  	}
+/*adds padding to content area*/
+.s-lib-side-borders {
+	padding: 0px 20px;
+}
+
+/*tucks skiplink out of view*/
+#s-lg-public-skiplink {
+	top: -70px;
+}
+
+/*modifies menu text by hamburger menu, mobile view*/
+#menu-text { 
+	padding-right: 14px; 
+    padding-left: 5px;
+	font-size: 20px;
+  	font-family: 'Open Sans', sans-serif;
+  	color: #fff;
+	} 
+
+.navbar-toggle.collapsed, .navbar-default .navbar-toggle {
+    border-color: #fff;
+    background-color: #3d3935;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    border-color: #fff;
+	background-color: #1E1A32;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+
+#header-nav .navbar-default {
+    background-color: #862633;
+    border-color: #862633;
+    border-radius: 0px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 0px;
+}
+
+/*modifies library name on mobile view*/
+#header-nav .navbar-default .navbar-brand {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 800;
+  font-size: 3em;
+  color: #862633;
+}
+
+/*styles branding area - background color behind logo or banner*/
+#branding-area {
+	background-color: #000;
+	color: #fff;
+    padding: 8px;
+}
+/*styles links in branding area - not needed for banner image*/
+#branding-area a{
+	color: #fff;
+}
+#branding-area a:hover, #branding-area a:visited, #branding-area a:focus {
+	color: #fff;
+	text-decoration: underline;
+}
+
+/*styles navbar background color, squares edges, sets font*/
+#header-nav .navbar-default {
+  	background-color: #862633;
+	border-color: #862633;
+	border-radius: 0px;
+  	font-family: 'Open Sans', sans-serif;
+}
+/*changes color for navbar links*/
+#header-nav .navbar-default .navbar-nav>li>a {
+	color: #FFFFFF;
+	padding-top: 40px;
+	padding-bottom:40px;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+    
+/*changes background color for open, hover and focused navbar links*/
+#header-nav .navbar-default .navbar-nav>.open>a,#header-nav .navbar-default .navbar-nav>.open>a:focus,#header-nav .navbar-default .navbar-nav>.open>a:hover {
+	background-color: #862633;
+}
+
+
+/*styles guide list panels*/
+.panel-heading > a {
+	color: #862633;	
+}
+
+.s-lg-gtitle.s-lib-color-lt-grey > a.bold {
+	color: #862633;	
+}
+
+.fa.fa-info-circle {
+	color: #333;	
+}
+
+.alert.alert-info.margin-top-med {
+	background-color: #E9DF97;
+	border-color: #E9DF97;
+	color: #000;
+}
+
+.alert.alert-info.margin-top-med > a {
+	color: #000;
+}
+
+
+/*styles box titles*/
+.s-lib-box .s-lib-box-title {
+	background-color: #D7D2CB;
+	font-size: 16px;
+	font-weight: 600;
+	color: #FFFFFF;
+	}
+/*styles tabs on search box*/
+.ui-tabs-anchor {
+background-color: #862633;
+color: #FFFFFF;
+font-size: 16px;
+font-weight: 600;
+font-family: 'Open Sans', sans-serif;
+}
+/*Changes font color on search box tabs*/
+#ui-id-1 {
+color: #FFFFFF;
+}
+/*Changes font color on search box tabs*/
+#ui-id-2 {
+color: #FFFFFF;
+}
+/*Changes font color on search box tabs*/
+#ui-id-3 {
+color: #FFFFFF;
+}
+
+/*styles box titles*/
+.s-lib-box .s-lib-box-title {
+	background-color: #D7D2CB;
+	font-size: 20px;
+	font-weight: 700;
+	color: #862633;
+	}
+
+/*styles sidebar boxes*/
+.s-lib-public-side-header {
+	box-shadow: none;
+    margin: 0;
+    padding: 5px;
+    background-color: #f5f5f5;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.txt.pad-top-sm {
+	box-shadow: none;
+    margin: 0;
+    padding: 5px;
+    background-color: #f5f5f5;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+h2.pad-bottom-sm {
+	color:#333;
+}
+
+/*styles email button*/
+.label-info {
+    background-color: #862633;
+} 
+.label-info:hover {
+    background-color: #3D3935!important;
+} 
+
+
+/*styles Subject guide page--commented out while fixing
+.s-lib-box-er-course-list, .s-lib-box-idx-guide-list, .s-lib-box-content, .s-lib-color-lt-grey {
+	box-shadow: none;
+    margin: 0;
+    padding: 5px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+*/
+
+/* popover icon styles */
+h3.popover-title, .popover-content .pad-bottom-sm * div, h3.popover.fade.right.in {
+	font-family: 'Open Sans', sans-serif;
+  	color: #000;
+  	font-size: 14px;
+	padding-bottom: 5px;
+}
+
+/*Guide navigation box styles*/
+
+#s-lg-tabs-container .nav-tabs > li > a, #s-lg-tabs-container .nav-tabs > li > button, #s-lg-tabs-container .nav-pills > li > a, #s-lg-tabs-container .nav-pills > li > button {
+    border: 1px solid transparent;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #862633;
+    color: #fff;
+    font-weight: bold;
+    padding: 4px 15px;
+}
+
+#s-lg-tabs-container .nav-tabs > .active > a, #s-lg-tabs-container .nav-tabs > .active > button, #s-lg-tabs-container .nav-pills > .active > a, #s-lg-tabs-container .nav-pills > .active > button {
+    color: #ffffff;
+    cursor: default;
+    background-color: #3D3935;
+    border: 1px solid transparent;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border-bottom-color: transparent;
+    font-weight: bold;
+}
+
+.nav .s-lg-index-nav-btn>button {
+    font-size: 14px;
+    margin: 0 10px;
+    padding: 5px 10px;
+	color: #fff;
+    background-color: #3D3935;
+}
+
+.nav-pills>li.active>button, .nav-pills>li.active>button:focus, .nav-pills>li.active>button:hover {
+    background-color: #862633;
+    color: #fff;
+}
+
+#s-lg-tabs-container .nav-tabs > li > a:hover, #s-lg-tabs-container .nav-tabs > li > button:hover, #s-lg-tabs-container .nav-pills > li > a:hover, #s-lg-tabs-container .nav-pills > li > button:hover {
+    border: 1px solid transparent;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #3D3935;
+    color: #ffffff;
+	cursor: default;
+}
+
+#s-lg-tabs-container .nav-tabs > .active > a:hover, #s-lg-tabs-container .nav-pills > .active > a:hover, #s-lg-tabs-container .nav-tabs > .active > button:hover, #s-lg-tabs-container .nav-pills > .active > button:hover {
+    color: #fff;
+    cursor: pointer;
+    background-color: #3d3935;
+    border: 1px solid transparent;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border-bottom-color: transparent;
+    font-weight: bold;
+}
+
+#s-lg-guide-desc-container {
+	padding-bottom: 20px;
+}
+
+/* Guide list side buttons */
+
+.btn-info {
+    color: #fff!important;
+    background-color: #862633;
+    border-color: #862633;
+	padding-top:5px;
+}
+
+.btn.btn-info.s-lg-hp-btn-section {
+	margin-top:5px;
+	display: flex;
+	justify-content: center;
+}
+
+/*Pagination styles*/
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #3d3935;
+    border-color: #3d3935;
+}
+
+/*Button styles*/
+span.input-group-btn, button.btn.btn-default {
+    color: #000;
+    background-color: #fdb713;
+    border-color: #fdb713;
+	border-radius: 5px;
+  	font-family: 'Arial', sans-serif;
+	font-size: 12px;
+}
+
+row {
+	margin-right: -15px;
+    margin-left: -15px;
+}
+
+i.fa .fa-angle-double-up .fa-stack-1x {
+	color: #1E1A32;
+}
+
+/* All Guides Page */
+.s-lib-box-er-course-list, .s-lib-box-idx-guide-list {
+	box-shadow: none;
+	margin: 0 0 10px;
+	background-color: #f5f5f5;
+	border-color: #ddd;
+}
+
+/*libcal hours style*/
+
+#libcal_hours, #api_hours_today_iid3038_lid0 {
+	background-color: #e9df97;
+	color: #000;
+	border: 2px solid transparent;
+	}
+.s-lc-time {
+    padding-left: 5px;
+    font-weight: bold;
+    border-left: 2px solid rgba(0, 0, 0, 0.44);
+    margin-left: 5px;
+}
+
+/*Footer styles*/
+
+h2.logo {
+	text-align:left;
+}
+
+h2.pad-bottom-sm {
+	font-family: 'Open Sans';
+}
+
+#custom-footer {
+    background-color: #3D3935;
+    color: white;
+    padding-top: 30px;
+	padding-bottom: 55px;
+}
+
+#custom-footer .row {
+    margin-bottom: 60px;
+	background-color: #3D3935;
+}
+
+#custom-footer .navbar-brand {
+    margin-top: 45px;
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
+
+#custom-footer ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+
+}
+
+#custom-footer h3 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#custom-footer h2 a{
+    font-size: 50px;
+    text-align: left;
+    color: #e9df97;
+}
+
+#custom-footer a {
+    color: #e9df97;
+    text-decoration: none;
+}
+
+#custom-footer a:hover, #custom-footer a:focus {
+    text-decoration: underline;
+    color: #e9df97;
+}
+
+#custom-footer .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+
+#custom-footer .social-networks a {
+    font-size: 32px;
+    color: #fff;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#custom-footer .social-networks a:hover {
+    text-decoration: none;
+}
+
+#custom-footer .facebook:hover {
+    color: #0077e2;
+}
+
+#custom-footer .youtube:hover {
+    color: #ef1a1a;
+}
+
+#custom-footer .instagram:hover {
+    color: #A719EF;
+}
+
+#custom-footer .btn {
+    color: #e9df97;
+    background-color: #d2ef8f;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.btn-info:hover {
+    color: #fff;
+    background-color: #3D3935;
+    border-color: #3D3935;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*Basic link styles */
+a {
+    color: #862633;
+    text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	color: #862633;
+	text-decoration:underline;
+	font-weight: bold;
+}
+
+a:active {
+	color: #862633;
+	font-weight: bold;
+}
+a:visited {
+	color: #862633;
+	font-weight: bold;
+}
+
+/*FA Styles */
+.fa-external-link {
+    font-size: 9px!important;
+    color: #ffffff;
+}
+
+/*media queries for mobile, 767 or less*/
+
+@media (max-width: 767px) {
+  /*changes background color for expanded menus*/
+  #header-nav .navbar-nav .open .dropdown-menu {
+  background-color: #FFFFFF;
+	}
+
+	.s-lib-side-borders {
+      width: 100% !important;
+    }
+	
+	.img-responsive {
+	width:50%!important;	
+	}
+	
+  /*changes link color in expanded menus*/
+  #header-nav .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: #862633;
+        font-size: 15px;
+    }
+	#menu-text.navbar-text.visible-xs.pull-right {
+		display:none;	
+	} 
+	
+	#header-nav .navbar-default {
+  	background-color: #862633;
+	border-radius: 0px;
+  	font-family: 'Open Sans', sans-serif;
+}
+/*changes color for navbar links*/
+#header-nav .navbar-default .navbar-nav>li>a {
+	color: #000;
+	background-color: #fff;
+	border: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+    
+/*changes background color for open, hover and focused navbar links*/
+	#header-nav .navbar-default .navbar-nav>.open>a,#header-nav .navbar-default .navbar-nav>.open>a:focus,#header-nav .navbar-default .navbar-nav>.open>a:hover {
+	background-color: #3D3935;
+	color: #fff;	
+	border: none;
+}
+
+	#main-navbar-collapse {
+	overflow: hidden;
+	}
+	
+.navbar-collapse {
+    padding-right: 15px;
+    padding-left: 15px;
+    border-top: none;
+    border-top-width: initial;
+    border-top-style: none;
+    border-top-color: initial;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    box-shadow: inset 0 0px 0 rgba(255,255,255);
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+@media (max-width: 767px) {
+  /*changes background color for expanded menus*/
+  #header-nav .navbar-nav .open .dropdown-menu {
+	  background-color: #FFFFFF;
+	  margin: -0.5px -15px;
+	  overflow: hidden;
+	}
+
+	.s-lib-side-borders {
+      width: 75%!important;
+    }
+	
+	.img-responsive {
+	width: 75%!important;
+	}
+	
+  /*changes link color in expanded menus*/
+  #header-nav .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: #000000;
+        font-size: 15px;
+	  	overflow: hidden;
+    }
+	#menu-text.navbar-text.visible-xs.pull-right {
+		display:none;	
+	} 
+	
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: #000;
+    background-color: #f5f5f5;
+	overflow: hidden;
+}
+	
+	.navbar-nav {
+    margin: 0px -15px;
+}
+	
+	/*changes background color for expanded menus*/
+  #header-nav .navbar-nav .open .dropdown-menu {
+  background-color: #FFFFFF;
+	}
+
+	.s-lib-side-borders {
+      width: 100% !important;
+	  overflow: hidden;
+    }
+	
+	.img-responsive {
+	width:50%!important;	
+	}
+	
+  /*changes link color in expanded menus*/
+  #header-nav .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: #000;
+        font-size: 15px;
+	  	overflow: hidden;
+    }
+	#menu-text.navbar-text.visible-xs.pull-right {
+		display:none;	
+	} 
+	
+	#header-nav .navbar-default {
+  	background-color: #862633;
+	border-radius: 0px;
+  	font-family: 'Open Sans', sans-serif;
+}
+/*changes color for navbar links*/
+#header-nav .navbar-default .navbar-nav>li>a {
+	color: #000;
+	background-color: #fff;
+	border: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+    
+/*changes background color for open, hover and focused navbar links*/
+	#header-nav .navbar-default .navbar-nav>.open>a,#header-nav .navbar-default .navbar-nav>.open>a:focus,#header-nav .navbar-default .navbar-nav>.open>a:hover {
+	background-color: #3D3935;
+	color: #fff;	
+	border: none;
+}
+
+	#main-navbar-collapse {
+	overflow: hidden;
+	}
+	
+.navbar-collapse {
+    padding-right: 15px;
+    padding-left: 15px;
+    border-top: none;
+    border-top-width: initial;
+    border-top-style: none;
+    border-top-color: initial;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    box-shadow: inset 0 0px 0 rgba(255,255,255);
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+
+/*media queries for non-mobile screens*/
+@media (min-width: 768px) {
+/*increases navbar font size*/
+#header-nav .navbar-default .navbar-nav>li>a {
+  font-size: 15px;
+  overflow: hidden;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #3D3935;
+    color: #fff;
+}
+
+/*increases alert box size to fit screen*/
+	
+	.alert.alert-info.margin-top-med {
+	background-color: #E9DF97;
+	border-color: #E9DF97;
+	color: #000;
+	width: fit-content;
+}
+ 
+/*increases font size in dropdowns*/
+#header-nav .dropdown-menu>li>a {
+font-size: 15px;
+    }  
+	
+}
+
+/*change button bottom padding*/
+
+.s-lg-index-nav-btn, .s-lg-index-subject-btn, .s-lg-index-guidetype-btn, .s-lg-index-owner-btn {
+	padding:5px;
+}
+
+
+@media (min-width: 1200px) {
+/*increases navbar font size on largest screensize*/
+#header-nav .navbar-default .navbar-nav>li>a {
+  font-size: 16px;}
+}
+/* CSS Document */
