@@ -76,6 +76,14 @@ body {
   margin-bottom: 32px;
 }
 
+/*modifies breadcrumb style*/
+#s-la-bc .breadcrumb {
+    border-radius: 4px;
+    margin: 0;
+    background: #f5f5f5;
+	color: #000; 
+}
+
 /*styles branding area - background color behind logo or banner*/
 #branding-area {
 	background-color: #000;
@@ -108,7 +116,14 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 	}
-    
+
+/*navbar navigation tabs*/
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    color: #000;
+    }
+
+
 /*changes background color for open, hover and focused navbar links*/
 #header-nav .navbar-collapse .navbar-nav>.open>a,#header-nav .navbar-collapse .navbar-nav>.open>a:focus,#header-nav .navbar-collapse .navbar-nav>.open>a:hover {
     background-color: #862633;
@@ -160,6 +175,28 @@ li.active {
 	color: #FFFFFF;
 }
 
+.s-la-faq-listing {
+    float: left;
+    margin: .5em;
+    border: #D7D2CB 1px solid;
+    border-radius: 4px;
+    width: 100%;
+    padding: .5em;
+    background-color: #eee;
+    list-style: none;
+}
+
+.s-srch-result {
+    float: left;
+    margin: .5em;
+    border: #D7D2CB 1px solid;
+    border-radius: 4px;
+    width: 100%;
+    padding: .5em;
+    background-color: #eee;
+    list-style: none;
+}
+
 /*header bar*/
 
 #s-la-public-header-title {
@@ -176,6 +213,12 @@ li.active {
 	background-color: #eee;
 }
 
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+}
 
 .btn.btn-primary {
 	color: #ffffff;
@@ -186,10 +229,10 @@ li.active {
 /*search tabs buttons */
 
 .btn-default {
-    color: #862633;
-    background-color: #fff;
-    border-color: #ddd;
-	border-radius: 4px 4px 0 0;
+    color: #fff;
+    background-color: #862633;
+    border-color: #862633;
+    border-radius: 4px;
 }
 
 ul.list-inline {
@@ -224,6 +267,20 @@ ul.list-inline {
     background-color: #3D3935;
 	border-radius: 4px 4px 4px 4px;
 	
+}
+
+/*libcal hours style*/
+
+#libcal_hours, #api_hours_today_iid3038_lid0 {
+	background-color: #e9df97;
+	color: #000;
+	border: 2px solid transparent;
+	}
+.s-lc-time {
+    padding-left: 5px;
+    font-weight: bold;
+    border-left: 2px solid rgba(0, 0, 0, 0.44);
+    margin-left: 5px;
 }
 
 /*advanced layout options */
@@ -310,6 +367,20 @@ i.fa.fa-edit, i.fa.fa-columns, i.fa.fa-list-ol, i.fa.fa-eye, i.fa.fa-arrow-left 
 	border: none;
 }
 
+/* system status styles */
+
+.s-la-product-div:hover, .s-la-productfolder-div:hover {
+    background-color: #efefef;
+}
+
+.s-la-product-div:focus, .s-la-productfolder-div:focus {
+    background-color: #efefef;
+}
+
+.label-prodstatus-349:hover {
+    background-color: #008a00;
+    color: #ffffff;
+}
 
 /* breadcrumbs list */
 .s-la-breadcrumbs {
@@ -335,19 +406,19 @@ i.fa.fa-edit, i.fa.fa-columns, i.fa.fa-list-ol, i.fa.fa-eye, i.fa.fa-arrow-left 
 .s-srch-result .label-default {
     color: #fff;
     background-color: #862633;
-    font-size: x-small;
+    font-size: small;
 }
 
 .s-srch-result .label-default:hover {
     color: #fff;
     background-color: #3D3935;
-    font-size: x-small;
+    font-size: small;
 }
 
 .s-srch-result .label-default a:hover {
     color: #fff;
     background-color: #3D3935;
-    font-size: x-small;
+    font-size: small;
 }
 
 .s-srch-result-title {
@@ -358,6 +429,10 @@ i.fa.fa-edit, i.fa.fa-columns, i.fa.fa-list-ol, i.fa.fa-eye, i.fa.fa-arrow-left 
 .s-srch-result-pages, .s-srch-result-desc {
 	font-size:medium;
 	padding-bottom:5px;
+}
+
+.metalabel {
+    font-size: small;
 }
 
 p {
@@ -394,6 +469,12 @@ p {
 .s-la-faq-listing-meta .divider {
     padding: 0 5px;
     color: #3D3935;
+}
+
+li.s-la-faq-listing {
+    margin-bottom: .5em;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #D7D2CB;
 }
 
 /*Footer styles*/
@@ -616,4 +697,3 @@ font-size: 15px;
   font-size: 16px;}
 }
 /* CSS Document */
-
