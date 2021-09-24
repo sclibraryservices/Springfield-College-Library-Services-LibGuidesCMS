@@ -1,4 +1,4 @@
-# Springfield College Library Services LibGuides CMS + LibAnswers Customizations
+# LibGuides CMS + LibAnswers Customizations for Springfield College Library Services 
 
 HTML and CSS files for the Springshare LibGuides and LibAnswers customizations used for the Springfield College library website redesign project. 
 
