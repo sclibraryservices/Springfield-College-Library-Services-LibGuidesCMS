@@ -2,39 +2,70 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>LibApps Header</title>
-<link rel="stylesheet" type="text/css" href="https://libapps.s3.amazonaws.com/sites/46/include/072921_libguides.css">
-<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<title>Springfield College Library Services Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="The homepage of Springfield College, Library Services.">
+<link rel="stylesheet" type="text/css" href="https://libapps.s3.amazonaws.com/sites/46/include/112324_library_hp_minified.css">
+<link rel="apple-touch-icon" sizes="180x180" href="https://libapps.s3.amazonaws.com/customers/44/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://libapps.s3.amazonaws.com/customers/44/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://libapps.s3.amazonaws.com/customers/44/images/favicon-16x16.png">
+<link rel="icon" href="https://libapps.s3.amazonaws.com/customers/44/images/favicon.ico">
+<link rel="preload" as="image" href="https://libapps.s3.amazonaws.com/customers/44/images/4thfloor-stacks-banner.jpg" imagesrcset="https://libapps.s3.amazonaws.com/customers/44/images/quick_search_banner_400px.jpg 400w, https://libapps.s3.amazonaws.com/customers/44/images/quick_search_banner_800px.jpg 800w, https://libapps.s3.amazonaws.com/customers/44/images/quick_search_banner_1600px.jpg 1600w"
+imagesizes="100vw">
+
+<!-- Floating Chat Widget -->
+<script src="https://springfield.libanswers.com/load_chat.php?hash=1232dd664e6a579353ddeebbb1a5ff3629b442430fdb382782f5f365d2e27f5f"></script>
+<div id="libchat_1232dd664e6a579353ddeebbb1a5ff3629b442430fdb382782f5f365d2e27f5f"></div>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+
+<style>
+.navbar-default .navbar-brand {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800;
+    font-size: 2.5em;
+    color: #fff!important;
+    background: #862633!important;
+}
+#s-lg-guide-header-meta, .s-lg-no-val, .s-lg-text-greyout, .s-lib-greyout {
+    color: #4d4d4d!important;
+</style>
 </head>
 
 <body>
-	
-	<!-- Begin custom-header -->
-	<div class="row" style="margin:0;padding:0;">
-		<div id="branding-area">
-			<div class="row" style="margin:0;padding:0;">
-				<div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
-				<div class="col-md-4 col-sm-6 col-xs-6 col-lg-4"><a href="https://springfield.edu" style="text-transform: uppercase;font-family: 'Roboto', sans-serif;font-weight:700;font-size:20px;" class="springfieldText">springfield.edu  <span style="font-size: 16px; font-weight: 300;"><i class="fa fa-arrow-right" aria-hidden="true"></i></span></a></div>
-				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 springfieldLinks" style="text-align: right;font-family: 'Roboto', sans-serif;font-weight:normal;">
-					<a href="https://springfield.edu/apply" style="padding-right:20px;font-weight:normal;" class="springfieldLinks">Apply</a>
-					<a href="https://springfield.edu/directory" style="padding-right:20px;font-weight:normal;" class="springfieldLinks">Directory</a>
-					<a href="https://springfield.edu/giving-to-springfield-college" style="padding-right:20px;font-weight:normal;" class="springfieldLinks">Giving</a>
-					<a href="https://pridenet.springfield.edu" style="padding-right:20px;font-weight:normal;" class="springfieldLinks">PrideNet</a>
-				</div>
-				<div class="col-lg-2 hidden-md hidden-sm hidden-xs"></div>
-			</div>
+
+<!-- Begin custom-header -->
+<!-- SC Branding -->
+<div class="container-fluid hidden-sm hidden-xs" style="padding:0px;margin:0px;">
+  <div class="row row-no-gutters">
+	<div class="col-md-12 hidden-sm hidden-xs">
+		<div class="col-xl-2 col-lg-2 col-md-1 col-sm-1 col-xs-1"></div><!-- Spacer column -->
+		<div class="col-xl-2 col-lg-2 col-md-5 col-sm-5 col-xs-5">
+			<a href="https://springfield.edu" class="springfieldText">springfield.edu  <i class="fa fa-arrow-right springfieldTextArrow" aria-hidden="true"></i></a>
 		</div>
+		<div class="col-xl-3 col-lg-3 col-md-2 col-sm-1 col-xs-1"></div><!-- Spacer column -->
+		<div class="col-xl-3 col-lg-3 col-md-4 col-sm-5 col-xs-5"> 
+			<a href="https://springfield.edu/apply" class="springfieldLinks apply">Apply</a>
+			<a href="https://springfield.edu/directory" class="springfieldLinks directory">Directory</a>
+			<a href="https://springfield.edu/giving-to-springfield-college" class="springfieldLinks giving">Giving</a>
+			<a href="https://pridenet.springfield.edu" class="springfieldLinks pridenet">PrideNet</a>
+		</div>
+		<div class="col-xl-1 hidden-sm hidden-md hidden-sx"></div><!-- Spacer column -->
 	</div>
-	<div class="row" style="margin:0;padding:0;">
-	<div id="header-nav" class="center block">
-		<nav class="navbar navbar-default" >
+  </div>
+</div>
+<!-- LS Navbar Start -->
+<div class="row row-no-gutters">
+	<div id="header-nav">
+		<nav class="navbar navbar-default">
 		  <div class="container">
-			<a class="navbar-brand" href="https://springfield.edu">
-				 <img src="https://libapps.s3.amazonaws.com/customers/44/images/small-sc-logo-footer.png" alt="Springfield College">
-			 </a>
-			<!-- Brand and toggle get grouped for better mobile display -->
+		  	<a class="navbar-brand" href="https://library.springfield.edu">
+				 <img src="https://libapps.s3.amazonaws.com/customers/44/images/ls-logo-2023.png" class="img-responsive" title="Springfield College Library Services" alt="Springfield College Library Services">
+			</a>
+<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse-1" aria-expanded="false">
 				<span class="sr-only">Toggle navigation</span>        
@@ -42,509 +73,305 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>        
 			  </button>      
-			  <p class="navbar-text visible-xs pull-right" id="menu-text">&nbsp;</p>
 			</div>
-
-
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="main-navbar-collapse-1">
-
-		<ul class="nav navbar-nav">
-
-				<li class="Home"><a href="https://library.springfield.edu" aria-label="Library Services Home">Library Services</a></li>
+<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="main-navbar-collapse-1">
+			<ul class="nav navbar-nav">
 				<li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research<span class="caret"></span></a>
-				  <ul class="dropdown-menu">
-					<li class="dropdown-header">Collections</li>
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Research Collections and Assistance">Research<span class="caret"></span></a>
+					  <ul class="dropdown-menu">
+						<li class="dropdown-header">Collections</li>
 						<li><a href="https://springfieldcollege.on.worldcat.org/discovery">Quick Search</a></li>
-						<li role="separator" class="divider"></li>
-					<li><a href="https://springfield.libguides.com/databases">Databases</a></li>
-						<li role="separator" class="divider"></li>
-					<li><a href="https://browzine.com/libraries/2167/subjects">Journals</a></li>
-						<li role="separator" class="divider"></li>
-					<li><a href="https://library.springfield.edu/theses-dissertations-and-projects">Theses, Dissertations, & Projects</a></li>
-						<li role="separator" class="divider"></li>
-					<li><a href="https://library.springfield.edu/archives">Archives & Special Collections</a></li>
-						<li role="separator" class="divider"></li>
-					<li><a href="https://cdm16122.contentdm.oclc.org/digital/collection/p15370coll2">Springfield College Digital Collections</a></li>
-					<li class="dropdown-header">Assistance</li>
-					<li><a href="https://library.springfield.edu/research-appointments">Research Appointments</a></li>
-						<li role="separator" class="divider"></li>
-					<li><a href="https://library.springfield.edu/library-chat">Chat Assistance</a></li>  
-						<li role="separator" class="divider"></li>
-					<li><a href="https://library.springfield.edu/guides">Research Guides</a></li>
-						<li role="separator" class="divider"></li>
-					<li><a href="https://library.springfield.edu/library-tutorials">Library Tutorials</a></li>
-						<li role="separator" class="divider"></li>
-					<li><a href="https://library.springfield.edu/citations">Citation Tools</a></li>
+						<li><a href="https://library.springfield.edu/databases">Databases</a></li>
+						<li><a href="https://browzine.com/libraries/2167/subjects">Journals</a></li>
+						<li><a href="https://library.springfield.edu/theses-dissertations-and-projects">Theses, Dissertations, &amp; Projects</a></li>
+						<li><a href="https://library.springfield.edu/archives">Archives &amp; Special Collections</a></li>
+						<li><a href="https://cdm16122.contentdm.oclc.org/digital/collection/p15370coll2">Springfield College Digital Collections</a></li>
+						<li class="dropdown-header">Assistance</li>
+						<li><a href="https://library.springfield.edu/research-appointments">Research Appointments</a></li>
+						<li><a href="https://library.springfield.edu/library-chat">Chat Assistance</a></li>  
+						<li><a href="https://library.springfield.edu/guides">Research Guides</a></li>
+						<li><a href="https://library.springfield.edu/library-tutorials">Library Tutorials</a></li>
+						<li><a href="https://library.springfield.edu/citations">Citation Tools</a></li>
+					  </ul>
+					</li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Library Services">Services<span class="caret"></span></a>
+					  <ul class="dropdown-menu">
+						<li class="dropdown-header">Library Services</li>
+						<li><a href="https://library.springfield.edu/about/borrowing">Borrowing</a></li>
+						<li><a href="https://library.springfield.edu/interlibrary-loan">Interlibrary Loan</a></li>
+						<li><a href="https://library.springfield.edu/course-reserves">Course Reserves</a></li>
+						<li><a href="https://library.springfield.edu/about/printing-scanning-and-computers">Printing, Scanning, &amp; Computers</a></li>
+						<li><a href="https://library.springfield.edu/account">Library Account</a></li>
+						<li class="dropdown-header">Faculty Services</li>
+						<li><a href="https://library.springfield.edu/faculty-services">Faculty Services Guide</a></li>
+						<li><a href="https://library.springfield.edu/information-literacy">Information Literacy Program</a></li>
+						<li><a href="https://library.springfield.edu/library-liaisons">Library Liaisons</a></li>
+						<li><a href="https://goo.gl/forms/lVJ6kK4pkzyIXBYT2">Request an Instruction Session</a></li>
+						<li><a href="https://springfield.libwizard.com/f/library-resource-request-form">Recommend a Purchase</a></li>
+						<li><a href="https://library.springfield.edu/oer">Open Educational Resources (OER)</a></li>	
+					  </ul>				
+					  </li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Library Spaces">Spaces<span class="caret"></span></a>
+					  <ul class="dropdown-menu">
+						<li class="dropdown-header">Library Spaces</li>
+						<li><a href="https://library.springfield.edu/spaces/group-study-rooms">Group Study Rooms</a></li>
+						<li><a href="https://library.springfield.edu/about-the-learning-commons">Harold C. Smith Learning Commons</a></li>
+						<li><a href="https://library.springfield.edu/about-the-learning-commons/scheduling">Scheduling Events in the Learning Commons</a></li> 
+						<li><a href="https://library.springfield.edu/spaces/springfield-college-museum">Springfield College Museum</a></li>
+					 </ul>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Archives and Special Collections">Archives<span class="caret" ></span></a>
+					  <ul class="dropdown-menu">
+						<li class="dropdown-header">Archives &amp; Special Collections</li>
+						<li><a href="https://library.springfield.edu/archives">Archives &amp; Special Collections Home</a></li>
+						<li><a href="https://cdm16122.contentdm.oclc.org/digital/collection/p15370coll2">Springfield College Digital Collections</a></li>
+						<li><a href="https://cdm16122.contentdm.oclc.org/digital/collection/p16122coll9/">College Yearbooks</a></li>
+						<li><a href="https://cdm16122.contentdm.oclc.org/digital/collection/p15370coll1">College Catalogs</a></li>
+						<li><a href="https://cdm16122.contentdm.oclc.org/digital/collection/p15370coll3">Triangle &amp; Physical Education Magazines</a></li>
+						<li><a href="https://cdm16122.contentdm.oclc.org/digital/collection/p16122coll11">College Department &amp; Club Newsletters</a></li>
+						<li><a href="https://library.springfield.edu/digital-exhibits">Digital Archival Exhibits</a></li>
+					  </ul>
+					</li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-label="About Us" title="About Us">About<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li class="dropdown-header">About Us</li>
+							<li><a href="https://library.springfield.edu/about/hours">Hours</a></li>
+							<li><a href="https://library.springfield.edu/about/staff-and-liaisons">Staff &amp; Liaisons</a></li>
+							<li><a href="https://library.springfield.edu/about/mission-and-history">Mission &amp; History</a></li>
+							<li><a href="https://library.springfield.edu/about/policies">Policies</a></li>
+							<li><a href="https://library.springfield.edu/library-systems-accessibility-information">Library Systems Accessibility</a>
+							<li><a href="https://library.springfield.edu/sitemap">Sitemap</a></li>
+						</ul>
+					  </li>
+					  <li><a href="https://springfield.libanswers.com" target="_blank" title="Frequently Asked Questions">FAQs</a></li>
+					  <li><a href="https://library.springfield.edu/account" title="Library Account Login"><i class="fa fa-user-circle-o" aria-hidden="true"></i><span class="sr-only">Library Account Login</span></a></li>
 				  </ul>
-				</li>
-				<li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
-				  <ul class="dropdown-menu">
-					<li class="dropdown-header">Library Services</li>
-					<li><a href="https://library.springfield.edu/about/borrowing">Borrowing</a></li>
-						<li role="separator" class="divider"></li>
-					<li><a href="https://library.springfield.edu/interlibrary-loan">Interlibrary Loan</a></li>
-						<li role="separator" class="divider"></li> 
-					<li><a href="https://library.springfield.edu/course-reserves">Course Reserves</a></li>
-						<li role="separator" class="divider"></li>
-					<li><a href="https://library.springfield.edu/about/printing-scanning-and-computers">Printing, Scanning, & Computers</a></li>
-					  <li role="separator" class="divider"></li>
-					<li><a href="https://springfieldcollege.on.worldcat.org/myaccount/">Library Account</a></li>
-					<li class="dropdown-header">Faculty Services</li>
-					<li><a href="https://library.springfield.edu/information-literacy">Information Literacy Program</a></li>
-						<li role="separator" class="divider"></li>
-					<li><a href="https://library.springfield.edu/library-liaisons">Library Liaisons</a></li>
-						<li role="separator" class="divider"></li>
-					<li><a href="https://goo.gl/forms/lVJ6kK4pkzyIXBYT2">Request an Instruction Session</a></li>
-						<li role="separator" class="divider"></li>
-					<li><a href="https://goo.gl/forms/oKvu9vhjQO251TJE2">Recommend a Purchase</a></li>
-				  </ul>				
-				  </li>
-				<li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Spaces<span class="caret"></span></a>
-				  <ul class="dropdown-menu">
-					<li class="dropdown-header">Library Spaces</li>
-					<li><a href="https://library.springfield.edu/spaces/group-study-rooms">Group Study Rooms</a></li>
-						<li role="separator" class="divider"></li>
-					<li><a href="https://library.springfield.edu/about-the-learning-commons">Harold C. Smith Learning Commons</a></li>
-						<li role="separator" class="divider"></li>
-					<li><a href="https://library.springfield.edu/spaces/springfield-college-museum">Springfield College Museum</a></li>
-				 </ul>
-				<li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Archives<span class="caret"></span></a>
-				  <ul class="dropdown-menu">
-					<li class="dropdown-header">Archives & Special Collections</li>
-					<li><a href="https://library.springfield.edu/archives">Archives & Special Collections Home</a></li>
-						<li role="separator" class="divider"></li>
-					<li><a href="https://cdm16122.contentdm.oclc.org/digital/collection/p15370coll2">Springfield College Digital Collections</a></li>
-					  <li role="separator" class="divider"></li> 
-					<li><a href="https://cdm16122.contentdm.oclc.org/digital/collection/p16122coll9/">College Yearbooks</a></li>
-						<li role="separator" class="divider"></li> 
-					<li><a href="https://cdm16122.contentdm.oclc.org/digital/collection/p15370coll1">College Catalogs</a></li>
-						<li role="separator" class="divider"></li> 
-					<li><a href="https://cdm16122.contentdm.oclc.org/digital/collection/p15370coll3">Triangle & Physical Education Magazines</a></li>
-						<li role="separator" class="divider"></li>
-					<li><a href="https://cdm16122.contentdm.oclc.org/digital/collection/p16122coll11">College Department & Club Newsletters</a></li>
-						 <li role="separator" class="divider"></li>
-					<li><a href="https://library.springfield.edu/digital-exhibits">Digital Archival Exhibits</a></li>
-				  </ul>				
-				  </li>
-				</li>
-				  <li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-label="About Us">About<span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li class="dropdown-header">About Us</li>
-						<li><a href="https://library.springfield.edu/about/hours">Hours</a></li>
-							<li role="separator" class="divider"></li>
-						<li><a href="https://library.springfield.edu/about/staff-and-liaisons">Staff & Liaisons</a></li>
-							<li role="separator" class="divider"></li>
-						<li><a href="https://library.springfield.edu/about/mission-and-history">Mission & History</a></li>
-							<li role="separator" class="divider"></li>
-						<li><a href="https://library.springfield.edu/about/policies">Policies</a></li>
-							<li role="separator" class="divider"></li>
-						<li><a href="https://springfield.libguides.com/StudentApplication">Student Employment</a></li>
-					</ul>
-				  </li>
-				  <li>
-					<li><a href="https://springfield.libanswers.com" target="_blank">FAQs <i class="fa fa-external-link" aria-hidden="true" style="color:#fff;font-size: small!important;"></i></a></li>
-							<li role="separator" class="divider"></li>
-					<li><a href="https://springfieldcollege.on.worldcat.org/myaccount/">Library Account</a></li>
-				  </li>
-			  </ul>
-			</div><!-- /.navbar-collapse -->
-		  </div><!-- /.container -->
-		</nav>
+				</div>
+			  </div>
+			</nav>
+		</div>
 	</div>
-	</div><!-- /.header-nav -->
+<!-- End custom header -->
 
-	<!-- End custom header -->
-
-	<!-- Begin Search Box -->
-	<div class="row" style="margin:0;padding:0;width: 100%;background-image:url(https://libapps.s3.amazonaws.com/customers/44/images/header.jpg);background-color: rgb(0 0 0 / 0.3)!important;background-blend-mode: darken!important;background-size: cover;height: auto;margin: 0;">
-		<div style="display: flex; width: 100%;">
-		<div class="col-lg-3 col-md-1 hidden-sm hidden-xs"></div> <!-- padding column -->
+<!-- Begin Search Box -->
+<div class="container-fluid" style="margin:0px;padding:0px;">
+  <div class="row row-no-gutters">
+	<div id="branding-area" class="col-sm-12 col-md-12 col-lg-12">
+		<div class="col-lg-3 col-md-1 hidden-sm hidden-xs"></div><!-- padding column -->
 		<div class="col-lg-6 col-md-10 col-sm-12 col-xs-12" style="background:rgba(0,0,0,0.25)"><!-- search box column -->
-		<div style="position: relative;">
-			<p class="quickSearch"><h1 style="text-align: center;color: #ffffff!important;
-		text-shadow: 1px 1px 8px #000000;text-align: center;margin: .5em;">Library Services</h1></p>
-			<div class="searchBoxContainer" style="overflow:hidden;">
-				<div id="searchboxdiscoverycallout" class="searchboxdiscoverycallout">
-
-								<div class="overlay">
-									<div>
-										  <div class="row" style="margin:0;padding:0px;">
-												<div>
-													<div id="search-wrapper" role="searchbox">
-
-														<div class="tabs">
-
-															<div class="tab-links row">
-																<div class="col-xs-3">
-																	<a href="#tab1" style="color:#ffffff;" tabindex="-1">
-																		<button id="quickSearchTab" class="selected" aria-pressed="false">
-																			<i class="fa fa-globe" style="font-size:2.2em;color:#ffffff;" aria-hidden="true"></i>
-																			<span class="tab-label">
-																				<br />
-																			Quick Search
-																			</span>
-																		</button>
-																	</a>
-																</div>
-																<div class="col-xs-3">
-																	<a href="#tab3" style="color: #ffffff;" tabindex="-1">
-																		<button id="articlesTab" aria-pressed="false">
-																			<i class="fa fa-file-text-o" style="font-size:2.2em;color:#ffffff;" aria-hidden="true"></i>
-																			<span class="tab-label">
-																				<br />
-																				Articles
-																			</span>
-																		</button>
-																	</a>
-																</div>
-																<div class="col-xs-3">
-																	<a href="#tab2" style="color: #ffffff;" tabindex="-1">
-																		<button id="booksTab" aria-pressed="false">
-																			<i class="fa fa-book" style="font-size:2.2em;color:#ffffff;" aria-hidden="true"></i>
-																			<span class="tab-label">
-																				<br />
-																				Books
-																			</span>
-																		</button>
-																	</a>
-																</div>
-																<div class="col-xs-3" style="color: #ffffff;">
-																		<a href="#tab4" style="color: #ffffff;" tabindex="-1">
-																			<button id="mediaTab" aria-pressed="false">
-																			<i class="fa fa-play-circle" style="font-size:2.2em;color: #ffffff;"></i>
-																				<span class="tab-label">
-																					<br />
-																					Videos
-																				</span>
-																			</button>
-																		</a>
-
-																</div>
-															</div>
-
-															<div class="tab-content">
-
-																<div id="tab1" class="tab active">
-																	<form action="https://springfieldcollege.on.worldcat.org/search?" target="_blank">
-
-																		<div id="searchEverything">
-
-																			<div class="searchTerm">
-																				<label for="everythingQuery">Quick Search</label>
-																				<input id="everythingQuery" placeholder="Find books, articles, videos, and more" autofocus="autofocus" class="searchbox" name="queryString">
-																			</div>
-
-																			<input type="submit" class="headersubmit glyphicon" value="&#xe003;" title="Search">
-																		</div>
-
-
-																	</form>
-
-																</div>
-
-
-																<div id="tab2" class="tab" style="display:none;">
-
-																	<form action="https://springfieldcollege.on.worldcat.org/search?" target="_blank">
-
-																		<div id="searchBooks">
-
-																			<div class="searchTerm">
-																				<label for="bookQuery">Books and Ebooks</label>
-																				<input id="bookQuery" placeholder="Find books and ebooks" autofocus="autofocus" class="searchbox" name="queryString">
-
-																				<input type="hidden" name="format" value="Book">
-
-																				<input type="hidden" name="subformat" value="Book::book_printbook">
-
-																				<input type="hidden" name="subformat" value="Book::book_digital">
-
-																				<input type="hidden" name="subformat" value="Book::book_thsis">
-
-																				<input type="hidden" name="subformat" value="Book::book_mic">
-
-																				<input type="hidden" name="subformat" value="Book::book_largeprint">
-
-																				<input type="hidden" name="subformat" value="Book::book_braille">
-
-																				<input type="hidden" name="subformat" value="Book::book_continuing">
-																			</div>
-
-																			<input type="submit" class="headersubmit glyphicon" value="&#xe003;" title="Search">
-																		</div>
-
-
-																	</form>
-																</div>
-
-
-
-																<div id="tab3" class="tab" style="display:none;">
-
-																	<form action="https://springfieldcollege.on.worldcat.org/search?" target="_blank">
-
-																		<div id="searchArticles">
-
-																			<div class="searchTerm">
-
-																				<label for="articleQuery">Articles and Book Chapters</label>															<input id="articleQuery" placeholder="Find journal articles, news, and book chapters" autofocus="autofocus" class="searchbox" name="queryString">
-
-																				<input type="hidden" name="format" value="Artchap">
-
-																				<input type="hidden" name="subformat" value="Artchap::artchap_artcl">
-
-																				<input type="hidden" name="subformat" value="Artchap::artchap_chptr">
-
-																				<input type="hidden" name="subformat" value="Artchap::artchap_digital">
-																			</div>
-																			<input type="submit" class="headersubmit glyphicon" value="&#xe003;" title="Search">
-																		</div>
-
-																	</form>
-
-																</div>
-
-
-
-
-																<div id="tab4" class="tab" style="display:none;">
-
-																	<form action="https://springfieldcollege.on.worldcat.org/search?" target="_blank">
-
-																		<div id="searchMedia">
-
-																			<div class="searchTerm">
-																			<label for="mediaQuery">DVDs and Evideos</label>
-																				<input id="mediaQuery" placeholder="Find DVDs and evideos" autofocus="autofocus"  class="searchbox" name="queryString">
-
-																				<input type="hidden" name="format" value="Video">
-
-																				<input type="hidden" name="subformat" value="Video::video_dvd">
-
-																				<input type="hidden" name="subformat" value="Video::video_vhs">
-
-																				<input type="hidden" name="subformat" value="Video::video_film">
-
-																				<input type="hidden" name="subformat" value="Video::video_digital">
-
-																				<input type="hidden" name="subformat" value="Video::video_bluray">
-
-																		</div>
-
-																			<input type="submit" class="headersubmit glyphicon" value="&#xe003;" title="Search">
-																		</div>
-
-
-																	</form>
-
-																</div>
-
-															</div>
-														</div>
+			<div style="position: relative;">
+				<h1 style="text-align: center;color:#ffffff!important;text-shadow: 1px 1px 8px #000000;margin:.5em;" class="quickSearch">Library Services</h1>
+					<div class="searchBoxContainer" style="overflow:hidden;">
+						<div id="searchboxdiscoverycallout" class="searchboxdiscoverycallout">
+							<div class="overlay">
+								<div>
+							  		<div class="row row-no-gutters">
+										<div id="search-wrapper" role="searchbox" aria-label="searchbox" aria-labelledby="searchbox">
+											<div class="tabs">
+												<div class="tab-links row row-no-gutters">
+													<div class="col-xs-3">
+														<a href="#tab1" class="btn btn-default selected" role="button" id="quickSearchTab" aria-label="Quick Search" aria-pressed="true">
+															<i class="fa fa-globe" style="font-size:2em;" aria-hidden="true"></i>
+															<span class="tab-label"><br>Quick Search</span>
+														</a>
 													</div>
-
+													<div class="col-xs-3">
+														<a href="#tab3" class="btn btn-default" role="button" id="articlesTab" aria-label="Articles" aria-pressed="false">
+															<i class="fa fa-file-text-o" style="font-size:2em;" aria-hidden="true"></i>
+															<span class="tab-label"><br>Articles</span>
+														</a>
+													</div>
+													<div class="col-xs-3">
+														<a href="#tab2" class="btn btn-default" role="button" id="booksTab" aria-label="Books" aria-pressed="false">
+															<i class="fa fa-book" style="font-size:2em;" aria-hidden="true"></i>
+															<span class="tab-label"><br>Books</span>
+														</a>
+													</div>
+													<div class="col-xs-3">
+														<a href="#tab4" class="btn btn-default" role="button" id="mediaTab" aria-label="Videos" aria-pressed="false">
+															<i class="fa fa-play-circle" style="font-size:2em;"></i>
+															<span class="tab-label"><br>Videos</span>
+														</a>
+													</div>
+											</div>
+											<div class="tab-content">
+												<div id="tab1" class="tab active">
+													<form action="https://springfieldcollege.on.worldcat.org/search?" target="_blank">
+														<div id="searchEverything">
+															<div class="searchTerm">
+																<label for="everythingQuery" style="display:none;">Quick Search</label>
+																	<input id="everythingQuery" placeholder="Find books, articles, videos, and more" autofocus="autofocus" class="searchbox" name="queryString">
+															</div>
+															<input type="submit" class="headersubmit glyphicon" aria-label="Submit" value="&#xe003;">
+														</div>
+													</form>
+												</div>
+												<div id="tab2" class="tab" style="display:none;">
+													<form action="https://springfieldcollege.on.worldcat.org/search?" target="_blank">
+														<div id="searchBooks">
+															<div class="searchTerm">
+																<label for="bookQuery" style="display:none;">Books and Ebooks</label>
+																<input id="bookQuery" placeholder="Find books and ebooks" autofocus="autofocus" class="searchbox" name="queryString">
+																<input type="hidden" name="format" value="Book">
+																<input type="hidden" name="subformat" value="Book::book_printbook">
+																<input type="hidden" name="subformat" value="Book::book_digital">
+																<input type="hidden" name="subformat" value="Book::book_thsis">
+																<input type="hidden" name="subformat" value="Book::book_mic">
+																<input type="hidden" name="subformat" value="Book::book_largeprint">
+																<input type="hidden" name="subformat" value="Book::book_braille">
+																<input type="hidden" name="subformat" value="Book::book_continuing">
+															</div>
+															<input type="submit" class="headersubmit glyphicon" aria-label="Submit" aria- value="&#xe003;">
+														</div>
+													</form>
+												</div>
+												<div id="tab3" class="tab" style="display:none;">
+													<form action="https://springfieldcollege.on.worldcat.org/search?" target="_blank">
+														<div id="searchArticles">
+															<div class="searchTerm">
+																<label for="articleQuery" style="display:none;">Articles and Book Chapters</label>						<input id="articleQuery" placeholder="Find journal articles, news, and book chapters" autofocus="autofocus" class="searchbox" name="queryString">
+																<input type="hidden" name="format" value="Artchap">
+																<input type="hidden" name="subformat" value="Artchap::artchap_artcl">
+																<input type="hidden" name="subformat" value="Artchap::artchap_chptr">
+																<input type="hidden" name="subformat" value="Artchap::artchap_digital">
+															</div>
+															<input type="submit" class="headersubmit glyphicon" aria-label="Submit" value="&#xe003;">
+														</div>
+													</form>
+												</div>
+												<div id="tab4" class="tab" style="display:none;">
+													<form action="https://springfieldcollege.on.worldcat.org/search?" target="_blank">
+														<div id="searchMedia">
+															<div class="searchTerm">
+																<label for="mediaQuery" style="display:none;">DVDs and Evideos</label>
+																<input id="mediaQuery" placeholder="Find DVDs and evideos" autofocus="autofocus" class="searchbox" name="queryString">
+																<input type="hidden" name="format" value="Video">
+																<input type="hidden" name="subformat" value="Video::video_dvd">
+																<input type="hidden" name="subformat" value="Video::video_vhs">
+																<input type="hidden" name="subformat" value="Video::video_film">
+																<input type="hidden" name="subformat" value="Video::video_digital">
+																<input type="hidden" name="subformat" value="Video::video_bluray">
+															</div>
+															<input type="submit" class="headersubmit glyphicon" aria-label="Submit" value="&#xe003;">
+														</div>
+													</form>
 												</div>
 											</div>
-											<div>
-												<td>
-													<div class="col-md-6 col-sm-5" id="about_quick_search" style="text-align:left;margin-bottom: 20px;">
-														<a href="https://library.springfield.edu/quick-search" style="background:rgb(0 0 0 / 15%);"><span style="padding-right:.2em;">[</span>What is in Quick Search?<span style="padding-left:.2em;">]</span></a>
-													</div>
-													<div class="col-md-6 col-sm-7" id="discovery-advanced-search" style="text-align: right;margin-bottom: 20px;">
-														<a href="https://springfieldcollege.on.worldcat.org/advancedsearch?databaseList=" target="_blank" style="background:rgb(0 0 0 / 15%);"><span style="padding-right:.2em;">[</span>Advanced Search<span style="padding-left:.2em;">]</span></a>
-													</div>
-												</td>
-											</div>
-							   </div>
-					  </div>
+										</div>
+									</div>
+							<div class="row row-no-gutters">
+								<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-7" id="about_quick_search">
+									<a href="https://library.springfield.edu/quick-search">[What is in Quick Search?]</a>
+								</div>
+								<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-5" id="discovery-advanced-search">
+									<a href="https://springfieldcollege.on.worldcat.org/advancedsearch?databaseList=" target="_blank">[Advanced Search]</a>
+								</div>
+							</div>
+						  </div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	</div>
-	</div>
-	 <!-- End Search Box Code -->
+	<div class="col-lg-3 col-md-1 hidden-sm hidden-xs"></div> <!-- padding column -->
+  </div>
+</div>
+</div>
 
+
+<!-- Search Box JS Begin -->
 	<script>
-			jQuery(document).ready(function () {
-				jQuery('.tabs .tab-links button').on('click', function (e) {
-					var currentAttrValue = jQuery(this).attr('href');
+				jQuery(document).ready(function () {
+					jQuery('.tabs .tab-links a').on('click', function (e) {
+						var currentAttrValue = jQuery(this).attr('href');
 
 
-					// Show/Hide Tabs
-					jQuery('.tabs button ' + currentAttrValue).show().siblings().hide();
+						// Show/Hide Tabs
+						jQuery('.tabs a ' + currentAttrValue).show().siblings().hide();
 
 
-					// Change/remove current tab to active
+						// Change/remove current tab to active
 
-					//jQuery(this).closest('h2').addClass('active').siblings().removeClass('active');
-					$('.tabs .tab-links button.selected').removeClass('selected').removeAttr('aria-pressed', 'false');
-					$(this).addClass('selected');
-					$(this).attr('aria-pressed', 'true');
+						//jQuery(this).closest('h2').addClass('active').siblings().removeClass('active');
+						$('.tabs .tab-links a.selected').removeClass('selected').removeAttr('aria-pressed', 'false');
+						$(this).addClass('selected');
+						$(this).attr('aria-pressed', 'true');
 
-					e.preventDefault();
+						e.preventDefault();
+					});
 				});
-			});
 
-		</script>
-
-
-		<script>
-			$('.windowForm').submit(function (e) {
-
-				// specify a unique target name
-				var target = 'windowFormTarget';
+			</script>
 
 
-				// open a new window and name it
-				window.open('', target, 'width=500,height=300');
-
-
-				// set the target of the form to be
-
-				// the window name
-				this.setAttribute('target', target);
-
-
-				// allow the form to be submitted normally
-			});
-		</script>
-
-		<script>
-			jQuery(document).ready(function () {
-				jQuery('.tabs .tab-links a').on('click', function (e) {
-					var currentAttrValue = jQuery(this).attr('href');
-
-
-					// Show/Hide Tabs
-					jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
-
-
-					// Change/remove current tab to active
-
-					//jQuery(this).closest('h2').addClass('active').siblings().removeClass('active');
-					$('.tabs .tab-links a.selected').removeClass('selected');
-					$(this).addClass('selected');
-
-					e.preventDefault();
-				});
-			});
-		</script>
-
-
-	<!-- End Search Box-->
-
-	<!-- Begin Hours Widget -->
-
-	<div class="row" style="background:#E9DF97;margin:0;padding:0;">
-		<div class="col-md-12 center-block">
-			<div id="libcal_hours" style="padding-top: .5em;padding-bottom: .5em">
-			<script src="https://springfield.libcal.com/js/hours_today.js"></script> 
-				<div id="s_lc_tdh_3038_440"></div> 
 			<script>
-	$(function(){ 
-	var s_lc_tdh_3038_440 = new $.LibCalTodayHours( $("#s_lc_tdh_3038_440"), { iid: 3038, lid: 440 }); 
-	});
-				</script> 
+				$('.windowForm').submit(function (e) {
 
-				<style>
-					.s-lc-w-today { border-spacing: 0; border-collapse: collapse; margin: auto; text-align: center; font-weight: bold;}
-					.s-lc-w-today td, .s-lc-w-today th { padding: 0; text-align: center; width:auto;}
-					.s-lc-w-head { display:none;}
-					.s-lc-w-loading { margin-top: 80px; text-align: center; }
-					.s-lc-w-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: auto; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;color:#000000; }
-					.s-lc-w-department .s-lc-w-name { padding-left: 20px; }
-					.s-lc-w-today-view-link { text-decoration: none; }
-					.s-lc-w-today-view-all { display:none; }
-				</style>
-			</div> <!-- /libcal_hours -->
-	</div> <!-- column -->
-	</div> <!-- row -->
+					// specify a unique target name
+					var target = 'windowFormTarget';
 
-	<!-- End Hours Widget -->
 
-<style>
-input.searchbox {
-	display: inline;
-	-webkit-appearance: none;
-	vertical-align: middle;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	height: 50px;
-	width: 88%;
-	padding: 10px;
-	margin: 10px auto;
-	border: 2px solid #862633;
-	float: left;
-	text-align: center;
-}
+					// open a new window and name it
+					window.open('', target, 'width=500,height=300');
 
-input.headersubmit {
-	display: inline;
-	-webkit-appearance: none;
-	vertical-align: middle;
-	height: 50px;
-	width: 12%;
-	margin: 10px auto;
-	border: 2px solid #862633;
-	background-color: #862633;
-	color: #ffffff;
-	font-size: 1.5rem;
-	cursor: pointer;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	border-radius: 0px 4px 4px 0px; 
-	outline: none;
-}
 
-.tab-links.row {
-	margin-top: 9px;
-	margin-left:10px;
-	margin-right:10px;
-	text-shadow: 1px 1px 8px #000000;
-	text-align: center;
-	margin: .5em;
-	display: flex;
-}
+					// set the target of the form to be
 
-button.selected, #quickSearchTab:hover, #articlesTab:hover, #booksTab:hover, #mediaTab:hover {
-	text-decoration: underline!important;
-	color: #ffffff;
-	background-color: rgba(44,44,44,0.77)!important;
-	border: 1px solid rgba(44,44,44,0.77)!important;
-	border-radius: 4px;
-	padding: .2em;	
-}
+					// the window name
+					this.setAttribute('target', target);
 
-#quickSearchTab, #articlesTab, #booksTab, #mediaTab {
-	background-color: #555555d4;
-	border: 1px solid #555555d4;
-	border-radius: 4px;
-	width: 100%;
-	padding: .2em;
-	color: #FFFFFF;
-	filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
-}
 
-i.selected {
-	color: #fff!important;
-	background-color:transparent!important;
-}
+					// allow the form to be submitted normally
+				});
+			</script>
+			<script>
+				jQuery(document).ready(function () {
+					jQuery('.tabs .tab-links a').on('click', function (e) {
+						var currentAttrValue = jQuery(this).attr('href');
 
-.tab-label {
-	color: #FFFFFF;
-	filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
-}
 
-</style>
-	
-	
+						// Show/Hide Tabs
+						jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+
+
+						// Change/remove current tab to active
+
+						//jQuery(this).closest('h2').addClass('active').siblings().removeClass('active');
+						$('.tabs .tab-links a.selected').removeClass('selected');
+						$(this).addClass('selected');
+
+						e.preventDefault();
+					});
+				});
+			</script>
+			<script>
+				jQuery(document).ready(function () {
+					jQuery('.tabs .tab-links a').on('focus', function (e) {
+						var currentAttrValue = jQuery(this).attr('href');
+
+
+						// Show/Hide Tabs
+						jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+
+
+						// Change/remove current tab to active
+
+						//jQuery(this).closest('h2').addClass('active').siblings().removeClass('active');
+						$('.tabs .tab-links a.selected').removeClass('selected');
+						$(this).addClass('selected');
+
+						e.preventDefault();
+					});
+				});
+			</script>
+<!-- End Search Box HTML/JS -->
+
+
+
 </body>
 </html>
