@@ -1,0 +1,339 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="https://libapps.s3.amazonaws.com/customers/44/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://libapps.s3.amazonaws.com/customers/44/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://libapps.s3.amazonaws.com/customers/44/images/favicon-16x16.png">
+<link rel="icon" href="https://libapps.s3.amazonaws.com/customers/44/images/favicon.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="https://libapps.s3.amazonaws.com/sites/46/include/112723_libguides_hp.css">
+</head>
+
+<body class="s-lg-guide-body">
+{{skip_link}}
+{{ADMIN_CMD_BAR}}
+<!-- BEGIN: Page Header -->
+{{public_header}}
+<!-- END: Page Header -->
+<!-- BEGIN: Guide Info Header -->
+<div id="s-lg-guide-header" class="container-fluid s-lib-header s-lib-side-borders">
+    <nav id="s-lib-bc" aria-label="breadcrumb">
+        {{breadcrumbs}}
+    </nav>
+    <div class="pull-right">
+        <div id="s-lg-guide-header-search">
+            {{guide_search}}        </div>
+        {{ADMIN_MINI_CMD_BAR}}
+    </div>
+    <div id="s-lg-guide-header-info">
+        <h1 id="s-lg-guide-name">{{guide_title}}</h1>
+        <div id="s-lg-guide-desc-container">
+            <span id="s-lg-guide-description">{{guide_description}}</span>
+        </div>
+    </div>
+</div>
+<!-- END: Guide Info Header -->
+<div id="s-lg-tabs-container" class="container-fluid s-lib-side-borders pad-top-med">
+    <div id="s-lg-guide-tabs" class="tabs" role="navigation" aria-label="Guide Pages">
+        <ul class="nav nav-tabs split-button-nav">
+            {{guide_nav}}
+        </ul>
+    </div>
+</div>
+<div id="s-lg-guide-tabs-title-bar" class="container-fluid s-lib-side-borders"></div>
+
+<!-- BEGIN: Quick Search Box -->
+<div class="container-fluid" style="margin:0px;padding:0px;">
+  <div class="row row-no-gutters">
+	<div id="branding-area" class="col-sm-12 col-md-12 col-lg-12">
+		<div class="col-lg-3 col-md-1 hidden-sm hidden-xs"></div><!-- padding column -->
+		<div class="col-lg-6 col-md-10 col-sm-12 col-xs-12" style="background:rgba(0,0,0,0.25)"><!-- search box column -->
+			<div style="position: relative;">
+				<h1 style="text-align: center;color:#ffffff!important;text-shadow: 1px 1px 8px #000000;margin:.5em;" class="quickSearch">Library Services</h1>
+					<div class="searchBoxContainer" style="overflow:hidden;">
+						<div id="searchboxdiscoverycallout" class="searchboxdiscoverycallout">
+							<div class="overlay">
+								<div>
+							  		<div class="row row-no-gutters">
+										<div id="search-wrapper" role="searchbox" aria-label="searchbox" aria-labelledby="search-wrapper">
+											<div class="tabs">
+												<div class="tab-links row row-no-gutters">
+													<div class="col-xs-3">
+														<a href="#tab1" class="btn btn-default selected" role="button" id="quickSearchTab" aria-label="Quick Search" aria-pressed="true">
+															<i class="fa fa-globe" style="font-size:2em;" aria-hidden="true"></i>
+															<span class="tab-label"><br>Quick Search</span>
+														</a>
+													</div>
+													<div class="col-xs-3">
+														<a href="#tab3" class="btn btn-default" role="button" id="articlesTab" aria-label="Articles" aria-pressed="false">
+															<i class="fa fa-file-text-o" style="font-size:2em;" aria-hidden="true"></i>
+															<span class="tab-label"><br>Articles</span>
+														</a>
+													</div>
+													<div class="col-xs-3">
+														<a href="#tab2" class="btn btn-default" role="button" id="booksTab" aria-label="Books" aria-pressed="false">
+															<i class="fa fa-book" style="font-size:2em;" aria-hidden="true"></i>
+															<span class="tab-label"><br>Books</span>
+														</a>
+													</div>
+													<div class="col-xs-3">
+														<a href="#tab4" class="btn btn-default" role="button" id="mediaTab" aria-label="Videos" aria-pressed="false">
+															<i class="fa fa-play-circle" style="font-size:2em;"></i>
+															<span class="tab-label"><br>Videos</span>
+														</a>
+													</div>
+											</div>
+											<div class="tab-content">
+												<div id="tab1" class="tab active">
+													<form action="https://springfieldcollege.on.worldcat.org/search?" target="_blank">
+														<div id="searchEverything">
+															<div class="searchTerm">
+																<label for="everythingQuery" style="display:none;">Quick Search</label>
+																	<input id="everythingQuery" placeholder="Find books, articles, videos, and more" autofocus="autofocus" class="searchbox" name="queryString">
+															</div>
+															<input type="submit" class="headersubmit glyphicon" aria-label="Submit" value="&#xe003;">
+														</div>
+													</form>
+												</div>
+												<div id="tab2" class="tab" style="display:none;">
+													<form action="https://springfieldcollege.on.worldcat.org/search?" target="_blank">
+														<div id="searchBooks">
+															<div class="searchTerm">
+																<label for="bookQuery" style="display:none;">Books and Ebooks</label>
+																<input id="bookQuery" placeholder="Find books and ebooks" autofocus="autofocus" class="searchbox" name="queryString">
+																<input type="hidden" name="format" value="Book">
+																<input type="hidden" name="subformat" value="Book::book_printbook">
+																<input type="hidden" name="subformat" value="Book::book_digital">
+																<input type="hidden" name="subformat" value="Book::book_thsis">
+																<input type="hidden" name="subformat" value="Book::book_mic">
+																<input type="hidden" name="subformat" value="Book::book_largeprint">
+																<input type="hidden" name="subformat" value="Book::book_braille">
+																<input type="hidden" name="subformat" value="Book::book_continuing">
+															</div>
+															<input type="submit" class="headersubmit glyphicon" aria-label="Submit" value="&#xe003;">
+														</div>
+													</form>
+												</div>
+												<div id="tab3" class="tab" style="display:none;">
+													<form action="https://springfieldcollege.on.worldcat.org/search?" target="_blank">
+														<div id="searchArticles">
+															<div class="searchTerm">
+																<label for="articleQuery" style="display:none;">Articles and Book Chapters</label>						<input id="articleQuery" placeholder="Find journal articles, news, and book chapters" autofocus="autofocus" class="searchbox" name="queryString">
+																<input type="hidden" name="format" value="Artchap">
+																<input type="hidden" name="subformat" value="Artchap::artchap_artcl">
+																<input type="hidden" name="subformat" value="Artchap::artchap_chptr">
+																<input type="hidden" name="subformat" value="Artchap::artchap_digital">
+															</div>
+															<input type="submit" class="headersubmit glyphicon" aria-label="Submit" value="&#xe003;">
+														</div>
+													</form>
+												</div>
+												<div id="tab4" class="tab" style="display:none;">
+													<form action="https://springfieldcollege.on.worldcat.org/search?" target="_blank">
+														<div id="searchMedia">
+															<div class="searchTerm">
+																<label for="mediaQuery" style="display:none;">DVDs and Evideos</label>
+																<input id="mediaQuery" placeholder="Find DVDs and evideos" autofocus="autofocus" class="searchbox" name="queryString">
+																<input type="hidden" name="format" value="Video">
+																<input type="hidden" name="subformat" value="Video::video_dvd">
+																<input type="hidden" name="subformat" value="Video::video_vhs">
+																<input type="hidden" name="subformat" value="Video::video_film">
+																<input type="hidden" name="subformat" value="Video::video_digital">
+																<input type="hidden" name="subformat" value="Video::video_bluray">
+															</div>
+															<input type="submit" class="headersubmit glyphicon" aria-label="Submit" value="&#xe003;">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+							<div class="row row-no-gutters">
+								<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-7" id="about_quick_search">
+									<a href="https://library.springfield.edu/quick-search">[What is in Quick Search?]</a>
+								</div>
+								<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-5" id="discovery-advanced-search">
+									<a href="https://springfieldcollege.on.worldcat.org/advancedsearch?databaseList=" target="_blank">[Advanced Search]</a>
+								</div>
+							</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-3 col-md-1 hidden-sm hidden-xs"></div> <!-- padding column -->
+  </div>
+</div>
+</div>
+<!-- Search Box JS Begin -->
+	<script>
+				jQuery(document).ready(function () {
+					jQuery('.tabs .tab-links a').on('click', function (e) {
+						var currentAttrValue = jQuery(this).attr('href');
+
+
+						// Show/Hide Tabs
+						jQuery('.tabs a ' + currentAttrValue).show().siblings().hide();
+
+
+						// Change/remove current tab to active
+
+						//jQuery(this).closest('h2').addClass('active').siblings().removeClass('active');
+						$('.tabs .tab-links a.selected').removeClass('selected').removeAttr('aria-pressed', 'false');
+						$(this).addClass('selected');
+						$(this).attr('aria-pressed', 'true');
+
+						e.preventDefault();
+					});
+				});
+
+			</script>
+
+
+			<script>
+				$('.windowForm').submit(function (e) {
+
+					// specify a unique target name
+					var target = 'windowFormTarget';
+
+
+					// open a new window and name it
+					window.open('', target, 'width=500,height=300');
+
+
+					// set the target of the form to be
+
+					// the window name
+					this.setAttribute('target', target);
+
+
+					// allow the form to be submitted normally
+				});
+			</script>
+			<script>
+				jQuery(document).ready(function () {
+					jQuery('.tabs .tab-links a').on('click', function (e) {
+						var currentAttrValue = jQuery(this).attr('href');
+
+
+						// Show/Hide Tabs
+						jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+
+
+						// Change/remove current tab to active
+
+						//jQuery(this).closest('h2').addClass('active').siblings().removeClass('active');
+						$('.tabs .tab-links a.selected').removeClass('selected');
+						$(this).addClass('selected');
+
+						e.preventDefault();
+					});
+				});
+			</script>
+			<script>
+				jQuery(document).ready(function () {
+					jQuery('.tabs .tab-links a').on('focus', function (e) {
+						var currentAttrValue = jQuery(this).attr('href');
+
+
+						// Show/Hide Tabs
+						jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+
+
+						// Change/remove current tab to active
+
+						//jQuery(this).closest('h2').addClass('active').siblings().removeClass('active');
+						$('.tabs .tab-links a.selected').removeClass('selected');
+						$(this).addClass('selected');
+
+						e.preventDefault();
+					});
+				});
+			</script>
+<!-- End Search Box HTML/JS -->
+
+<!-- BEGIN: Guide Content -->
+<div id="s-lg-guide-main" class="container-fluid s-lib-main s-lib-side-borders">
+	<div id="content-box-row" class="row" style="margin-top:15px;">
+		<div id="alert-boxes" class="col-md-12">
+			{{empty_page_sub_page_list}}
+			{{content}}
+			{{page_prev_next_links}}
+		</div>
+	</div>
+	<div id="hp-row-1-container" class="s-lib-main container-fluid s-lib-side-borders col-md-12">
+		<div id="hp-row-1-row" class="row" style="margin-top:15px;margin-bottom: 15px;">
+			<div id="row-1-col-1" class="col-md-8 center">
+				<div id="homepage-buttons-box">{{content_box_31291180}}</div>
+        		</div>
+			<div id="row-1-col-2" class="col-md-4 center">
+				<div id="hours-box" class="col-sm-6 col-md-12">{{content_box_31193027}}</div>
+				<div id="contact-us-box" class="col-sm-6 col-md-12">{{content_box_31193233}}</div>
+				<div id="library-account-box" class="col-sm-6 col-md-12">{{content_box_31989278}}</div>
+			</div>
+		</div>
+       </div>
+	  <div id="hp-row-2-container" class="s-lib-main container-fluid s-lib-side-borders col-sm-12 col-md-12">
+		<div id="homepage-row-2" class="row flex-row" style="margin-top:15px;margin-bottom: 15px;">
+			<div id="row-2-col-1" class=" col-xs-12 col-sm-12 col-md-4 ig-feed-box">{{content_box_31291269}}</div>
+			<div id="row-2-col-2" class=" col-xs-12 col-sm-12 col-md-4 new-books-box">{{content_box_31273381}}</div>
+			<div id="row-2-col-3" class=" col-xs-12 col-sm-12 col-md-4 ig-display-box">{{content_box_31291220}}</div>
+		</div>
+	</div>
+</div>
+<!-- END: Guide Content -->
+<!-- BEGIN: Page Footer -->
+<div id="s-lib-footer-public" class="s-lib-footer footer container-fluid s-lib-side-borders">
+    <div id="s-lg-guide-header-meta" class="pad-top-sm pad-left-med clearfix">
+        <ul id="s-lg-guide-header-attributes" class="">
+            <li id="s-lg-guide-header-updated" class="s-lg-h-separator">
+                {{last_updated_display}}
+		 </li>
+            <li id="s-lg-guide-header-url" class="s-lg-h-separator">
+                {{guide_url_display}}
+            </li>
+            <li id="s-lg-guide-print-url">
+                {{print_url_display}}
+            </li>
+        </ul>
+        <div id="s-lib-footer-login-link" class="pull-right pad-right-med">
+            {{login_url_display}}
+	  </div>
+    </div>
+    <div class="pad-bottom-sm clearfix">
+        <div id="s-lib-footer-support-link" class="pull-right pad-right-med">
+            {{support_url_display}}        </div>
+        <div id="s-lg-guide-header-subjects" class="pad-top-sm pad-left-med pad-right-med pull-left">
+            {{guide_subjects}}
+        </div>
+        <div id="s-lg-guide-header-tags" class="pad-top-sm pad-left-med">
+            {{guide_tags}}
+        </div>
+    </div>
+</div>
+<!-- END: Page Footer -->
+<!-- scroll_top.twig -->
+<div id="s-lib-scroll-top">
+    <a href="javascript:void(0);" onclick="jQuery('body').focus();" title="Back to Top"
+       aria-label="Back to Top">
+        <span class="fa-stack fa-lg" aria-hidden="true">
+            <i class="fa fa-square-o fa-stack-2x"></i>
+            <i class="fa fa-angle-double-up fa-stack-1x" style="position:relative; bottom:2px;"></i>
+        </span>
+    </a>
+</div>
+<!-- !scroll_top.twig -->
+<div id="s-lib-alert" title=""><div id="s-lib-alert-content"></div></div>
+<!-- BEGIN: Custom Footer -->
+{{public_footer}}
+<!-- END: Custom Footer -->
+</body>
+
+</html>
